@@ -1,81 +1,26 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Independent certificate display page. This is not an official NPTEL verification service.">
-  <title>Certificate Display | NOC-BJ4S-F9FK-03Z5C</title>
-  <style>
-    :root { --red:#a51f22; --dark:#252525; --muted:#666; --line:#e6e6e6; --bg:#f5f5f5; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--dark); background:var(--bg); }
-    header { background:#fff; border-top:8px solid var(--red); border-bottom:1px solid var(--line); }
-    .header-inner { max-width:1120px; margin:auto; padding:22px 24px; display:flex; align-items:center; gap:16px; }
-    .mark { width:48px; height:48px; border:3px solid var(--red); border-radius:50%; display:grid; place-items:center; color:var(--red); font-weight:800; font-size:13px; flex:none; }
-    .brand { font-size:clamp(19px,3vw,27px); color:var(--red); font-weight:800; letter-spacing:.3px; }
-    .subbrand { margin-top:4px; color:#555; font-size:13px; }
-    main { max-width:1120px; margin:30px auto; padding:0 20px 40px; }
-    .notice { background:#fff8e8; border:1px solid #ead8aa; border-left:4px solid #bd8b27; padding:13px 16px; border-radius:5px; color:#59471f; font-size:13px; line-height:1.5; margin-bottom:22px; }
-    .card { background:white; border:1px solid var(--line); border-radius:8px; overflow:hidden; box-shadow:0 3px 14px rgba(0,0,0,.045); }
-    .card-head { padding:22px 26px 17px; border-bottom:1px solid var(--line); }
-    h1 { margin:0; font-size:23px; }
-    .id { color:var(--red); font-weight:700; margin-top:9px; overflow-wrap:anywhere; }
-    .details { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 30px; padding:22px 26px; }
-    .label { color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.7px; margin-bottom:6px; }
-    .value { font-size:15px; font-weight:600; line-height:1.4; }
-    .viewer { background:#ededed; border-top:1px solid var(--line); padding:18px; }
-    .viewer-bar { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:0 auto 12px; max-width:950px; }
-    .viewer-title { font-size:14px; font-weight:700; }
-    .download { background:var(--red); color:white; text-decoration:none; padding:10px 15px; border-radius:4px; font-size:13px; font-weight:700; }
-    iframe { display:block; width:100%; max-width:950px; height: min(78vh, 900px); min-height:520px; margin:auto; border:1px solid #ccc; background:white; }
-    footer { text-align:center; color:#777; font-size:12px; line-height:1.6; padding:20px 12px 4px; }
-    @media(max-width:600px) { .header-inner{padding:16px}.details{grid-template-columns:1fr;padding:18px}.card-head{padding:19px} main{margin:18px auto;padding:0 12px 28px} iframe{min-height:440px;height:70vh}.viewer{padding:12px} }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="header-inner">
-      <div class="mark" aria-hidden="true">CV</div>
-      <div>
-        <div class="brand">CERTIFICATE DISPLAY</div>
-        <div class="subbrand">Independent certificate viewing page</div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="notice">
-      <strong>Independent copy — not an official NPTEL verification page.</strong>
-      This page displays a certificate PDF supplied by the page owner. For authoritative verification, use the official NPTEL website and the verification details printed on the original certificate.
-    </div>
-
-    <section class="card" aria-labelledby="certificate-heading">
-      <div class="card-head">
-        <h1 id="certificate-heading">Certificate details</h1>
-        <div class="id">Certificate reference: NOC-BJ4S-F9FK-03Z5C</div>
-      </div>
-      <div class="details">
-        <div><div class="label">Certificate holder</div><div class="value">KALLURU SAI DHEERAJ REDDY</div></div>
-        <div><div class="label">Course</div><div class="value">VLSI DESIGN FLOW: RTL TO GDS</div></div>
-        <div><div class="label">Course session</div><div class="value">JUL–OCT 2026</div></div>
-        <div><div class="label">Consolidated score</div><div class="value">64%</div></div>
-        <div><div class="label">Duration</div><div class="value">12 weeks</div></div>
-        <div><div class="label">Roll number printed on certificate</div><div class="value">NPTEL26EE147S654200669</div></div>
-      </div>
-      <div class="viewer">
-        <div class="viewer-bar">
-          <div class="viewer-title">Certificate document</div>
-          <a class="download" href="certificate.pdf" target="_blank" rel="noopener">Open / Download PDF</a>
-        </div>
-        <iframe src="certificate.pdf" title="Uploaded certificate PDF">
-          Your browser cannot display PDFs inline. Use the Open / Download PDF link above.
-        </iframe>
-      </div>
-    </section>
-    <footer>
-      This independently hosted page is not operated, endorsed, or verified by NPTEL.<br>
-      The PDF is displayed as provided; consult the official NPTEL verification portal for validation.
-    </footer>
-  </main>
+    <iframe src="certificate.pdf"></iframe>
 </body>
 </html>
